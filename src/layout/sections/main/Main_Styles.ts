@@ -28,7 +28,9 @@ const MainTitle = styled.div`
 			weight: 700,
 		})}
 	}
-
+	h1:last-of-type {
+		display: none;
+	}
 	@media screen and (max-width: 528px) {
 		h1:first-of-type {
 			display: none;
