@@ -34,7 +34,7 @@ export const Menu: React.FC<MenuPropsType> = props => {
 							to={item.href}
 							smooth={true}
 							spy={true}
-							offset={-1}
+							offset={-18}
 							fontSize={props.fontSize}
 							fontWeight={props.fontWeight}
 							onClick={() => {
