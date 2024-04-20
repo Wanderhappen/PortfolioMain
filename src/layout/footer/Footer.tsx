@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
 		<S.Footer>
 			<Container>
 				<S.Wrapper>
-					<Menu fontSize='18px' fontWeight='400'></Menu>
+					<Menu closeMenu={() => {}} fontSize='18px' fontWeight='400'></Menu>
 					<S.Attribution>
 						Designed and built by
 						<Gradient

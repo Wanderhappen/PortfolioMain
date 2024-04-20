@@ -20,7 +20,14 @@ export const MobileMenu: React.FC = props => {
 					setMenuIsOpen(false)
 				}}
 			>
-				<Menu direction='column' gap='80px' fontSize='25px' />
+				<Menu
+					closeMenu={() => {
+						setMenuIsOpen(false)
+					}}
+					direction='column'
+					gap='80px'
+					fontSize='25px'
+				/>
 			</S.MobileMenuPopup>
 		</S.MobileMenu>
 	)

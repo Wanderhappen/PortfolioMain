@@ -14,7 +14,7 @@ export const DesktopMenu: React.FC<DesktopMenuProps> = ({ toggleTheme }) => {
 	return (
 		<StyledDesktopMenu>
 			<FlexWrapper gap='50px' align='center'>
-				<Menu gap='50px' />
+				<Menu closeMenu={() => {}} gap='50px' />
 				<SocialList />
 				<ThemeSwitcher toggleTheme={toggleTheme} />
 			</FlexWrapper>

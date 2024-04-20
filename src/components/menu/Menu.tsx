@@ -5,12 +5,10 @@ export const items = [
 		title: 'Home',
 		href: 'home',
 	},
-
 	{
 		title: 'Tech Stack',
 		href: 'technologies',
 	},
-
 	{
 		title: 'Projects',
 		href: 'projects',
@@ -22,6 +20,7 @@ type MenuPropsType = {
 	fontWeight?: string
 	direction?: string
 	gap?: string
+	closeMenu: () => void // Новый пропс для закрытия меню
 }
 
 export const Menu: React.FC<MenuPropsType> = props => {
@@ -38,6 +37,9 @@ export const Menu: React.FC<MenuPropsType> = props => {
 							offset={-1}
 							fontSize={props.fontSize}
 							fontWeight={props.fontWeight}
+							onClick={() => {
+								props.closeMenu()
+							}}
 						>
 							{item.title}
 						</S.NavLink>

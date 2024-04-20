@@ -18,7 +18,7 @@ const MainTitle = styled.div`
 	})}
 	color: ${props => props.theme.colors.supportFont};
 	p {
-		display: none;
+		display: block;
 	}
 
 	h1 {
@@ -27,6 +27,15 @@ const MainTitle = styled.div`
 			Fmin: 42,
 			weight: 700,
 		})}
+	}
+
+	@media screen and (max-width: 528px) {
+		h1:first-of-type {
+			display: none;
+		}
+		h1:last-of-type {
+			display: block;
+		}
 	}
 `
 const Main = styled.section`

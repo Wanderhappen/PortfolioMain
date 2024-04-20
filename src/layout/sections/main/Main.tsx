@@ -25,7 +25,9 @@ export const Main: React.FC = () => {
 								}}
 							/>
 						</h1>
-						<p>I build things for webb</p>
+						<h1>
+							<p>I build things for web</p>
+						</h1>
 					</S.MainTitle>
 					<S.ContainerImg>
 						<S.Photo src={photoMain} alt='' />
