@@ -6,7 +6,7 @@ import { Menu } from '../../../../components/menu/Menu'
 import { SocialList } from '../../../../components/socialList/SocialList'
 import { ThemeSwitcher } from './themeSwitcher/ThemeSwitcher'
 
-interface DesktopMenuProps {
+type DesktopMenuProps = {
 	toggleTheme: () => void
 }
 
